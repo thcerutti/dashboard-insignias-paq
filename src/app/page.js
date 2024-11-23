@@ -3,6 +3,7 @@ import React from "react";
 import ListaEducandos from "@/app/components/ListaEducandos";
 import ListaInsignias from "./components/ListaInsignias";
 import styles from "./page.module.css";
+import GraficoInsigniasConquistadas from "./components/GraficoInsigniasConquistadas/GraficoInsigniasConquistadas";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <main>
         <ListaEducandos />
         <ListaInsignias />
+        <GraficoInsigniasConquistadas />
       </main>
     </div>
   );
