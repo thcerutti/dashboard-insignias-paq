@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+}
+
+.container > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container li {
+  margin: 10px 0;
+}
+
+.container li > a {
+  display: block;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.container li > a:hover {
+  background-color: var(--azul-paq);
+  color: white;
+  font-weight: bold;
+}

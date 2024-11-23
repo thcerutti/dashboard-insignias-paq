@@ -1,4 +1,10 @@
 .container > main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > main > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
 }

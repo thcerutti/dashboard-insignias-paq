@@ -9,3 +9,7 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+:root {
+  --azul-paq: #1EB4E9;
+}

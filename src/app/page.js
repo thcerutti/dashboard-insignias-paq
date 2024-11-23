@@ -10,8 +10,10 @@ export default function Home() {
     <div className={styles.container}>
       <h1>PAQ Dashboard</h1>
       <main>
-        <ListaEducandos />
-        <ListaInsignias />
+        <div>
+          <ListaEducandos />
+          <ListaInsignias />
+        </div>
         <GraficoInsigniasConquistadas />
       </main>
     </div>

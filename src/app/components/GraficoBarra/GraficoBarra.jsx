@@ -47,7 +47,11 @@ const GraficoBarra = ({ chartLabels, chartData, title }) => {
       },
     },
   };
-  return <Bar data={data} options={options} />;
+  return (
+    <div style={{ width: "100%" }}>
+      <Bar data={data} options={options} />;
+    </div>
+  );
 };
 
 export default GraficoBarra;
