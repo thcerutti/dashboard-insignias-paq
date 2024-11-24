@@ -5,6 +5,7 @@ const constants = {
     insignias: `${baseUrl}/insignias`,
     detalheInsignia: `${baseUrl}/insignia`,
     insigniasConquistadas: `${baseUrl}/insignias/conquistadas`,
+    educandosQueConquistaramDeterminadaInsignia: `${baseUrl}/insignia/{id}/educandos`,
 
     detalheEducando: `${baseUrl}/educando`,
     educandos: `${baseUrl}/educandos`,
