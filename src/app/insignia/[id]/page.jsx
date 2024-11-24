@@ -4,20 +4,8 @@ import { useParams } from "next/navigation";
 import axios from "axios";
 import constants from "@/constants";
 import styles from "./page.module.css";
-import { FaHome, FaStar } from "react-icons/fa";
-
-const EstrelaInsignia = ({ nivel }) => {
-  const cor = {
-    1: "#b87333", // copper
-    2: "#c0c0c0", // silver
-    3: "#ffd700", // gold
-  };
-  return (
-    <span>
-      <FaStar style={{ fill: cor[nivel] }} title={`Nível ${nivel}`} />
-    </span>
-  );
-};
+import { FaHome } from "react-icons/fa";
+import EstrelaInsignia from "@/app/components/EstrelaInsignia";
 
 export default function About() {
   const [insignia, setInsignia] = useState({});
