@@ -3,6 +3,21 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import axios from "axios";
 import constants from "@/constants";
+import styles from "./page.module.css";
+import { FaHome, FaStar } from "react-icons/fa";
+
+const EstrelaInsignia = ({ nivel }) => {
+  const cor = {
+    1: "#b87333", // copper
+    2: "#c0c0c0", // silver
+    3: "#ffd700", // gold
+  };
+  return (
+    <span>
+      <FaStar style={{ fill: cor[nivel] }} title={`Nível ${nivel}`} />
+    </span>
+  );
+};
 
 export default function About() {
   const [insignia, setInsignia] = useState({});
@@ -21,26 +36,34 @@ export default function About() {
   }, []);
 
   return (
-    <div>
-      <a href="/">voltar</a>
-      <h1>Página da insígnia</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        <a href="/">
+          <FaHome />
+        </a>
+        Detalhes da Insignia
+      </h1>
       <ul>
         <li>
-          <strong>Nome:</strong>
+          <strong>Nome: </strong>
           {insignia.nome}
         </li>
         <li>
-          <strong>Trilha:</strong>
+          <strong>Trilha: </strong>
           {insignia.trilha}
         </li>
         <li>
           <strong>Níveis:</strong>
         </li>
-
         <ol>
           {insignia.niveis &&
             insignia.niveis.map((nivel, index) => (
-              <li key={index}>{nivel.requisitos}</li>
+              <li key={index}>
+                <span>
+                  <EstrelaInsignia nivel={nivel.id} />
+                  {nivel.requisitos}
+                </span>
+              </li>
             ))}
         </ol>
       </ul>

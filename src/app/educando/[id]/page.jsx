@@ -6,7 +6,20 @@ import constants from "@/constants";
 import styles from "./page.module.css";
 import Image from "next/image";
 import format from "date-fns/format";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaStar } from "react-icons/fa";
+
+const EstrelaInsignia = ({ nivel }) => {
+  const cor = {
+    1: "#b87333", // copper
+    2: "#c0c0c0", // silver
+    3: "#ffd700", // gold
+  };
+  return (
+    <span>
+      <FaStar style={{ fill: cor[nivel] }} title={`Nível ${nivel}`} />
+    </span>
+  );
+};
 
 export default function Educando() {
   const [educando, setEducando] = useState(null);
@@ -52,8 +65,11 @@ export default function Educando() {
                     educando.insignias.map((insignia) => (
                       <li key={insignia.id}>
                         <a href={`/insignia/${insignia.id}`}>
-                          {insignia.nome}{" "}
-                          <span>{format(insignia.data, "dd/MM/yyyy")}</span>
+                          <span>
+                            <EstrelaInsignia nivel={insignia.nivel} />
+                            {insignia.nome}
+                          </span>
+                          <time>{format(insignia.data, "dd/MM/yyyy")}</time>
                         </a>
                       </li>
                     ))}
