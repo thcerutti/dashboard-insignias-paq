@@ -1,0 +1,85 @@
+.container > h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 10px;
+}
+
+.container > h1 > a > svg {
+  color: var(--azul-paq);
+}
+
+.container > main > section > ul {
+  margin: 0;
+}
+
+.container > main > section > ul > li {
+  list-style: none;
+  padding: 10px;
+}
+
+.container > main {
+  display: flex;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 0px;
+}
+
+.container > main >section {
+  width: 70%;
+  padding: 10px;
+}
+
+.container > main > aside {
+  width: 30%;
+  padding: 10px;
+}
+
+.container li > a {
+  display: block;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.container li > a:hover {
+  background-color: var(--azul-paq);
+  color: white;
+}
+
+.container li > a:hover > span {
+  background-color:white;
+  color: #000;
+}
+
+.container ul > li > ul > li {
+  margin: 10px 0;
+}
+
+.container ul > li > ul {
+  max-width: fit-content;
+}
+
+.container  li > a > span {
+  margin-right: 10px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  font-size: small;
+  padding: 5px;
+}
+
+.container li > a {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.container aside {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

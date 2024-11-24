@@ -6,9 +6,7 @@ import constants from "@/constants";
 const GraficoInsigniasConquistadas = () => {
   const [chartData, setChartData] = useState([]);
   const [chartLabels, setChartLabels] = useState([]);
-  console.log("out");
   useEffect(() => {
-    console.log("in");
     axios
       .get(constants.endpoints.insigniasConquistadas)
       .then((response) => {
