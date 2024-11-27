@@ -38,7 +38,7 @@ export default function Educando() {
           {educando && (
             <ul>
               <li>
-                <strong>Nome:</strong> {educando.nome_completo}
+                <strong>Nome:</strong> {educando.nome}
               </li>
               <li>
                 <strong>Trilha:</strong> {educando.trilha}

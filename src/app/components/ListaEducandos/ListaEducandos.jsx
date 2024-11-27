@@ -23,7 +23,7 @@ const ListaEducandos = () => {
       <ul>
         {educandos.map((educando) => (
           <li key={educando.id}>
-            <a href={`/educando/${educando.id}`}>{educando.nome_completo}</a>
+            <a href={`/educando/${educando.id}`}>{educando.nome}</a>
           </li>
         ))}
       </ul>

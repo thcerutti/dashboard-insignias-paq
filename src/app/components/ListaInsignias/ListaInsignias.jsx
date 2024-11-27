@@ -21,8 +21,8 @@ const ListaInsignias = () => {
     <div className={styles.container}>
       <h2>Insignias</h2>
       <ul>
-        {insignias.map((insignia) => (
-          <li key={insignia.id}>
+        {insignias.map((insignia, index) => (
+          <li key={index}>
             <a href={`/insignia/${insignia.id}`}>{insignia.nome}</a>
           </li>
         ))}

@@ -64,7 +64,12 @@ export default function About() {
               <li key={index}>
                 <span>
                   <EstrelaInsignia nivel={nivel.id} />
-                  {nivel.requisitos}
+                  <ul>
+                    {nivel.requisitos &&
+                      nivel.requisitos.map((requisito, index) => (
+                        <li key={index}>{requisito.descricao}</li>
+                      ))}
+                  </ul>
                 </span>
               </li>
             ))}
