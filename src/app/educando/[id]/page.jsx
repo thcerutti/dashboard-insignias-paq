@@ -69,7 +69,7 @@ export default function Educando() {
         <aside>
           {educando && (
             <Image
-              src={`https://ui-avatars.com/api/?rounded=true&size=256&name=${educando?.nome_completo}`}
+              src={`https://ui-avatars.com/api/?rounded=true&size=256&name=${educando?.nome}`}
               width={200}
               height={200}
               alt={`Avatar de ${educando.nome_completo}`}
