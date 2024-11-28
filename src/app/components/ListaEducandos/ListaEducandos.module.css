@@ -2,6 +2,17 @@
   width: 100%;
 }
 
+.container > h2 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 10px;
+}
+
+.container > h2 > a > svg {
+  color: var(--azul-paq);
+}
+
 .container > ul {
   list-style: none;
   padding: 0;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import constants from "@/constants";
 import styles from "./ListaEducandos.module.css";
+import { FaPlusCircle } from "react-icons/fa";
 
 const ListaEducandos = () => {
   const [educandos, setEducandos] = useState([]);
@@ -19,7 +20,12 @@ const ListaEducandos = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Educandos</h2>
+      <h2>
+        <a href="/novoEducando">
+          <FaPlusCircle />
+        </a>
+        Educandos
+      </h2>
       <ul>
         {educandos.map((educando) => (
           <li key={educando.id}>

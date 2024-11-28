@@ -1,0 +1,31 @@
+.container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container > h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  gap: 10px;
+}
+
+.container > h1 > a > svg {
+  color: var(--azul-paq);
+}
+
+.container > form > input {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.container > form > button {
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  background-color: var(--azul-paq);
+  color: white;
+  border: none;
+  cursor: pointer;
+}

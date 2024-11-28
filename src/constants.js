@@ -9,6 +9,7 @@ const constants = {
 
     detalheEducando: `${baseUrl}/educando`,
     educandos: `${baseUrl}/educandos`,
+    criarEducando: `${baseUrl}/educando/criar`,
   },
   charts: {
     backgroundColor: [
