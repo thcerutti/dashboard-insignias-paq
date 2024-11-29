@@ -89,3 +89,9 @@
   align-items: center;
   gap: 5px;
 }
+
+@media (max-width: 768px) {
+  .container > main > aside {
+    display: none;
+  }
+}
