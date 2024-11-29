@@ -30,7 +30,7 @@
 
 .container ol > li > span {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 .container section > ul {
